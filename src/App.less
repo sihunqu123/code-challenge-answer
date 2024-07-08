@@ -1,0 +1,128 @@
+body {
+    #addAssetPrompt {
+        border-color: #ccc;
+        border-radius: 5px;
+        
+        &::backdrop {
+            background: #8008; 
+            backdrop-filter: blur(1px);
+        }
+
+        &[open] {
+            display: grid;
+        }
+
+        min-width: 300px;
+        padding: 15px;
+        
+        gap: 25px;
+        position: relative;
+        justify-content: stretch;
+        grid-auto-flow: row;
+        grid-template-rows: 30px max-content 30px;
+
+        .dialog-banner {
+            display: grid;
+            grid-template-columns: 25px auto 10px;
+            height: 100%;
+            /* height: 30px; */
+            width: 100%;
+            align-content: center;
+
+            .dialog-icon {
+                color: blue;
+            }
+
+            .dialog-title {
+                color: dodgerblue;
+            }
+
+            .dialog-x {
+                background: none;
+                border: none;
+                color: #c24949;
+                margin: 0;
+                padding: 0;
+
+            }
+        }
+
+        .dialog-body {
+            width: 100%;
+            text-align: center;
+        }
+        .dialog-footer {
+            width: 100%;
+            display: flex;
+            gap: 5px;
+            width: 100%;
+            justify-content: end;
+            .dialog-confirm {
+                background-color: skyblue;
+            }
+        }
+
+    }
+
+    .datasource-select {
+        display: grid;
+        grid-template-columns: 200px max-content;
+        grid-auto-flow: column;
+        /* height: 100%; */
+        align-content: center;
+        justify-content: flex-start;
+        height: 50px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .chain-action {
+        display: grid;
+        grid-template-columns: 200px max-content;
+        grid-auto-flow: column;
+        /* height: 100%; */
+        align-content: center;
+        justify-content: flex-start;
+        height: 50px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+
+
+    .asset-list-ui {
+        display: grid;
+        gap: 25px;
+        position: relative;
+        justify-content: stretch;
+        grid-auto-flow: row;
+
+        .table-head {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .table-head-column {
+                text-align: center;
+            }
+        }
+
+        .table-body-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .table-body-column {
+                text-align: center;
+            }
+        }
+        .table-active-row {
+            background: cadetblue;
+        }
+
+    }
+
+
+
+
+}
